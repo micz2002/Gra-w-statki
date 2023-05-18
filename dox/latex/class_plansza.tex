@@ -1,0 +1,360 @@
+\hypertarget{class_plansza}{}\doxysection{Plansza Class Reference}
+\label{class_plansza}\index{Plansza@{Plansza}}
+
+
+{\ttfamily \#include $<$Plansza.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_plansza_a8351c4dbcc842c6bc3aa11897f43ff1a}{Plansza}} (int \mbox{\hyperlink{class_plansza_aaec68cf623afbb7f2f9e10fc030843e5}{szerokosc}}, int \mbox{\hyperlink{class_plansza_ad51d5225574d7a36d3feedf9d1f67712}{wysokosc}})
+\item 
+\mbox{\hyperlink{class_plansza_a4f246f46c88413936c5ee794e97032fc}{$\sim$\+Plansza}} ()
+\item 
+int \mbox{\hyperlink{class_plansza_a757ecd81e94ef0d5908f0071957e3311}{pobierz\+\_\+\+Szerokosc}} ()
+\item 
+int \mbox{\hyperlink{class_plansza_a1f0071e0840908b249b487634bc49c10}{pobierz\+\_\+\+Wysokosc}} ()
+\item 
+void \mbox{\hyperlink{class_plansza_a1484ad8a655a2421852acd6cfc64d0c1}{rysuj}} (bool czy\+\_\+\+AI)
+\item 
+void \mbox{\hyperlink{class_plansza_ae8018bd92f4a48dd74405fd7013e080a}{rozmiesc\+\_\+\+Statki}} (bool czy\+\_\+\+AI, bool widocznosc\+\_\+\+Planszy, \mbox{\hyperlink{class_statek}{Statek}} $\ast$st)
+\item 
+bool \mbox{\hyperlink{class_plansza_a6dd4679869aafed7e91f03bc1dc4dc84}{czy\+\_\+\+Graniczy}} (\mbox{\hyperlink{class_statek}{Statek}} $\ast$st)
+\item 
+\mbox{\hyperlink{class_statek}{Statek}} $\ast$ \mbox{\hyperlink{class_plansza_a5ae8316db0ba0b8af967187aadc076fe}{stworz\+\_\+\+Cztero\+Masztowiec}} ()
+\item 
+\mbox{\hyperlink{class_statek}{Statek}} $\ast$ \mbox{\hyperlink{class_plansza_a2c98af5151abe2af2accbe7f6b0b5b95}{stworz\+\_\+\+Dwu\+Masztowiec}} ()
+\item 
+\mbox{\hyperlink{class_statek}{Statek}} $\ast$ \mbox{\hyperlink{class_plansza_a125a99353ee43af8ed8ec58b7f1240ec}{stworz\+\_\+\+Jedno\+Masztowiec}} ()
+\item 
+void \mbox{\hyperlink{class_plansza_a4b148e197dbc77ffbc302a8b84603ba3}{strzelaj}} (bool czy\+\_\+\+AI)
+\item 
+void \mbox{\hyperlink{class_plansza_a2f828742e60bb88175fc85a2dc0b64e1}{strzelaj\+\_\+\+Ponownie}} (bool czy\+\_\+\+AI, int x\+\_\+\+Wylosowane, int y\+\_\+\+Wylosowane)
+\item 
+int \mbox{\hyperlink{class_plansza_aff8cf45b519547f256badf9e04eb8cb4}{czy\+\_\+\+Trafiono}} (bool czy\+\_\+\+AI, int x\+\_\+\+Wylosowane, int y\+\_\+\+Wylosowane)
+\item 
+int \mbox{\hyperlink{class_plansza_a6fb37a8c9fe0567de85019466378932d}{pobierz\+\_\+zatopione\+\_\+\+Statki}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_statek}{Statek}} $\ast$ \mbox{\hyperlink{class_plansza_a05f95b49df83ca3d01a2b8911e9246f5}{obiekt\+\_\+\+Statku}} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_plansza_aaec68cf623afbb7f2f9e10fc030843e5}{szerokosc}}
+\item 
+int \mbox{\hyperlink{class_plansza_ad51d5225574d7a36d3feedf9d1f67712}{wysokosc}}
+\item 
+int \mbox{\hyperlink{class_plansza_a68b35200843bc1c67737de09b240acbf}{zatopione\+\_\+\+Statki}}
+\item 
+int \mbox{\hyperlink{class_plansza_a00b2f4571e5d22ce98cdd1cae6d9fda7}{licznik\+\_\+\+Dwu\+Masztowca}}
+\item 
+int \mbox{\hyperlink{class_plansza_a546ba68e5d094515bafaa4845014221d}{licznik\+\_\+\+Cztero\+Masztowca}}
+\item 
+int \mbox{\hyperlink{class_plansza_a2f9f147d09ab5e47505cad0dc52acfba}{aktualne\+\_\+x}}
+\item 
+int \mbox{\hyperlink{class_plansza_aea14506fec5b8a002ed859084b584525}{aktualne\+\_\+y}}
+\item 
+int \mbox{\hyperlink{class_plansza_a0a5f2024a97711e4bc1e66c07a0660c1}{losuj\+\_\+\+Orientacje\+\_\+\+Dwumasztowca}}
+\item 
+int \mbox{\hyperlink{class_plansza_a0beb707fa8fff157a6034be0b4011284}{losuj\+\_\+\+Orientacje\+\_\+\+Czteromasztowca}}
+\item 
+char $\ast$$\ast$ \mbox{\hyperlink{class_plansza_a0a81cfaa73670bb6318a89030925ee95}{pole\+Planszy}}
+\item 
+bool $\ast$$\ast$ \mbox{\hyperlink{class_plansza_adadfa5b042756f94a855b66de9973ede}{czy\+Zapelnione}}
+\item 
+int $\ast$$\ast$ \mbox{\hyperlink{class_plansza_a2ddded9ca30adbca7342f64f9c450945}{jaki\+\_\+\+Statek\+\_\+i\+\_\+\+Pozycja}}
+\item 
+bool \mbox{\hyperlink{class_plansza_aed3ecf6587c2ecf09cd04900fb843ec5}{czy\+Pion}}
+\item 
+bool \mbox{\hyperlink{class_plansza_add105f5fb0395522259e7fea6278b990}{strzelaj\+\_\+\+Wkolo}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_plansza_a8351c4dbcc842c6bc3aa11897f43ff1a}\label{class_plansza_a8351c4dbcc842c6bc3aa11897f43ff1a}} 
+\index{Plansza@{Plansza}!Plansza@{Plansza}}
+\index{Plansza@{Plansza}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{Plansza()}{Plansza()}}
+{\footnotesize\ttfamily Plansza\+::\+Plansza (\begin{DoxyParamCaption}\item[{int}]{szerokosc,  }\item[{int}]{wysokosc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_plansza_a4f246f46c88413936c5ee794e97032fc}\label{class_plansza_a4f246f46c88413936c5ee794e97032fc}} 
+\index{Plansza@{Plansza}!````~Plansza@{$\sim$Plansza}}
+\index{````~Plansza@{$\sim$Plansza}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{$\sim$Plansza()}{~Plansza()}}
+{\footnotesize\ttfamily Plansza\+::$\sim$\+Plansza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_plansza_a6dd4679869aafed7e91f03bc1dc4dc84}\label{class_plansza_a6dd4679869aafed7e91f03bc1dc4dc84}} 
+\index{Plansza@{Plansza}!czy\_Graniczy@{czy\_Graniczy}}
+\index{czy\_Graniczy@{czy\_Graniczy}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{czy\_Graniczy()}{czy\_Graniczy()}}
+{\footnotesize\ttfamily bool Plansza\+::czy\+\_\+\+Graniczy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_statek}{Statek}} $\ast$}]{st }\end{DoxyParamCaption})}
+
+Funkcja sprawdza czy dany statek graniczy z innym.
+
+Pobiera wskaznik typu \mbox{\hyperlink{class_statek}{Statek}} 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em st} & obiekt statku. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true jesli statek graniczy z innym statkiem, w przeciwnym wypadku false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plansza_aff8cf45b519547f256badf9e04eb8cb4}\label{class_plansza_aff8cf45b519547f256badf9e04eb8cb4}} 
+\index{Plansza@{Plansza}!czy\_Trafiono@{czy\_Trafiono}}
+\index{czy\_Trafiono@{czy\_Trafiono}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{czy\_Trafiono()}{czy\_Trafiono()}}
+{\footnotesize\ttfamily int Plansza\+::czy\+\_\+\+Trafiono (\begin{DoxyParamCaption}\item[{bool}]{czy\+\_\+\+AI,  }\item[{int}]{x\+\_\+\+Wylosowane,  }\item[{int}]{y\+\_\+\+Wylosowane }\end{DoxyParamCaption})}
+
+Funkcja odpowiadajaca za sprawdzenie w co trafil strzal (puste pole, statek przeciwnika, miejsce w ktore juz strzelano).
+
+W przypadku trafienia w statek przeciwnika miejsce strzalu zamieniane jest na \textquotesingle{}X\textquotesingle{} i ustawiana jest wartosc zmiennej typu bool strzelaj\+\_\+\+Wkolo na true. Zmienna strzelaj\+\_\+\+Wkolo odpowiada za strzelanie wokol poprzedniego strzalu. W przypadku trafienia w puste pole miejsce strzalu zamieniane jest na \textquotesingle{}$\ast$\textquotesingle{}. W przypadku trafienia w to samo miejsce wywoluje sie funkcja strzelaj.
+
+W przypadku zatopienia statku zwiekszana jest zmienna typu int zatopione\+\_\+\+Statki o jeden. W przypadku zatopienia jednomasztowca ogwiazdkowujemy miejsce wokol niego i ustawiamy wartosc strzelaj\+\_\+\+Wkolo na false. W przypadku trafienia w dwumaszstowiec zwiekszamy zmienna licznik\+\_\+\+Dwu\+Masztowca o jeden (zliczajaca zestrzelone fragmenty statku). Jesli licznik\+\_\+\+Dwu\+Masztowca == 2 to ustawiamy wartosc strzelaj\+\_\+\+Wkolo na false. W przypadku trafienia czteromasztowca zwiekszamy zmienna licznik\+\_\+\+Cztero\+Masztowca o jeden. Jesli licznik\+\_\+\+Cztero\+Masztowca \texorpdfstring{$>$}{>}= 2 to ustawiamy wartosc strzelaj\+\_\+\+Wkolo na false.
+
+Pobiera wartosc typu bool oraz dwie wartosci typu int. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em czy\+\_\+\+AI} & zmienna rozrozniajaca gracza od AI, ma wartosc true jesli ruch wykonuje AI w przypadku ruchu gracza ma wartosc false. \\
+\hline
+\mbox{\texttt{ in}}  & {\em x\+\_\+\+Wylosowane} & wylosowona wspolrzedna x. \\
+\hline
+\mbox{\texttt{ in}}  & {\em y\+\_\+\+Wylosowane} & wylosowona wspolrzedna y. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 jesli zatopiono wszystkie statki przeciwnika (zmienna zatopione\+\_\+\+Statki == 3) lub AI zatopi pojedynczy statek. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plansza_a757ecd81e94ef0d5908f0071957e3311}\label{class_plansza_a757ecd81e94ef0d5908f0071957e3311}} 
+\index{Plansza@{Plansza}!pobierz\_Szerokosc@{pobierz\_Szerokosc}}
+\index{pobierz\_Szerokosc@{pobierz\_Szerokosc}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{pobierz\_Szerokosc()}{pobierz\_Szerokosc()}}
+{\footnotesize\ttfamily int Plansza\+::pobierz\+\_\+\+Szerokosc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja ta zwraca szerokosc planszy.
+
+\begin{DoxyReturn}{Returns}
+szerokosc. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plansza_a1f0071e0840908b249b487634bc49c10}\label{class_plansza_a1f0071e0840908b249b487634bc49c10}} 
+\index{Plansza@{Plansza}!pobierz\_Wysokosc@{pobierz\_Wysokosc}}
+\index{pobierz\_Wysokosc@{pobierz\_Wysokosc}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{pobierz\_Wysokosc()}{pobierz\_Wysokosc()}}
+{\footnotesize\ttfamily int Plansza\+::pobierz\+\_\+\+Wysokosc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja ta zwraca wysokosc planszy.
+
+\begin{DoxyReturn}{Returns}
+wysokosc. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plansza_a6fb37a8c9fe0567de85019466378932d}\label{class_plansza_a6fb37a8c9fe0567de85019466378932d}} 
+\index{Plansza@{Plansza}!pobierz\_zatopione\_Statki@{pobierz\_zatopione\_Statki}}
+\index{pobierz\_zatopione\_Statki@{pobierz\_zatopione\_Statki}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{pobierz\_zatopione\_Statki()}{pobierz\_zatopione\_Statki()}}
+{\footnotesize\ttfamily int Plansza\+::pobierz\+\_\+zatopione\+\_\+\+Statki (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja ta zwraca ilosc zatopionych statkow.
+
+\begin{DoxyReturn}{Returns}
+zatopione\+\_\+\+Statki. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plansza_ae8018bd92f4a48dd74405fd7013e080a}\label{class_plansza_ae8018bd92f4a48dd74405fd7013e080a}} 
+\index{Plansza@{Plansza}!rozmiesc\_Statki@{rozmiesc\_Statki}}
+\index{rozmiesc\_Statki@{rozmiesc\_Statki}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{rozmiesc\_Statki()}{rozmiesc\_Statki()}}
+{\footnotesize\ttfamily void Plansza\+::rozmiesc\+\_\+\+Statki (\begin{DoxyParamCaption}\item[{bool}]{czy\+\_\+\+AI,  }\item[{bool}]{widocznosc\+\_\+\+Planszy,  }\item[{\mbox{\hyperlink{class_statek}{Statek}} $\ast$}]{st }\end{DoxyParamCaption})}
+
+Funkcja pobiera wszystkie niezbedne dane z obietku statku. Nastepnie uzupelnia wszystkie tablice klasy \mbox{\hyperlink{class_plansza}{Plansza}} (poslugujac sie pobranymi danymi statku) w celu pozniejszego wyswietlenia statku na planszy, mozliwosci jego rozmieszczenia wynikajacej ze stycznosci z innym statkiem i rozrozniania statkow
+
+Pobiera dwie wartosci typu bool oraz wskaznik typu \mbox{\hyperlink{class_statek}{Statek}} 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em czy\+\_\+\+AI} & zmienna rozrozniajaca gracza od AI, ma wartosc true jesli ruch wykonuje AI w przypadku ruchu gracza ma wartosc false. \\
+\hline
+\mbox{\texttt{ in}}  & {\em widocznosc\+\_\+\+Planszy} & widocznosc statkow AI na planszy, ma wartosc true jesli gracz wybral, aby statki AI na planszy byly widoczne, w przeciwnym wypadku false. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em st} & obiekt statku. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plansza_a1484ad8a655a2421852acd6cfc64d0c1}\label{class_plansza_a1484ad8a655a2421852acd6cfc64d0c1}} 
+\index{Plansza@{Plansza}!rysuj@{rysuj}}
+\index{rysuj@{rysuj}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{rysuj()}{rysuj()}}
+{\footnotesize\ttfamily void Plansza\+::rysuj (\begin{DoxyParamCaption}\item[{bool}]{czy\+\_\+\+AI }\end{DoxyParamCaption})}
+
+Funkcja rysuje plansze ze wszystkimi obiektami dla gracza lub AI.
+
+Pobiera wartosc typu bool 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em czy\+\_\+\+AI} & zmienna rozrozniajaca gracza od AI, ma wartosc true jesli ruch wykonuje AI w przypadku ruchu gracza ma wartosc false. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plansza_a4b148e197dbc77ffbc302a8b84603ba3}\label{class_plansza_a4b148e197dbc77ffbc302a8b84603ba3}} 
+\index{Plansza@{Plansza}!strzelaj@{strzelaj}}
+\index{strzelaj@{strzelaj}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{strzelaj()}{strzelaj()}}
+{\footnotesize\ttfamily void Plansza\+::strzelaj (\begin{DoxyParamCaption}\item[{bool}]{czy\+\_\+\+AI }\end{DoxyParamCaption})}
+
+Funkcja odpowiadajaca za system strzelania.
+
+Jezeli ruch wykonuje AI oraz opcja strzelaj\+\_\+\+Wkolo ma wartosc false, wspolrzedne strzalu sa wybierane losowo i wywolywana jest funkcja czy\+\_\+\+Trafiono. Jezeli ruch wykonuje AI oraz opcja strzelaj\+\_\+\+Wkolo ma wartosc true, wspolrzedne strzalu sa wybierane losowo i wywolywana jest funkcja strzelaj\+\_\+\+Ponownie. Jezeli ruch wykonuje gracz to wspolrzedne strzalu sa wybierane przez niego i wywolywana jest funkcja czy\+\_\+\+Trafiono.
+
+Pobiera wartosc typu bool. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em czy\+\_\+\+AI} & zmienna rozrozniajaca gracza od AI, ma wartosc true jesli ruch wykonuje AI w przypadku ruchu gracza ma wartosc false. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plansza_a2f828742e60bb88175fc85a2dc0b64e1}\label{class_plansza_a2f828742e60bb88175fc85a2dc0b64e1}} 
+\index{Plansza@{Plansza}!strzelaj\_Ponownie@{strzelaj\_Ponownie}}
+\index{strzelaj\_Ponownie@{strzelaj\_Ponownie}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{strzelaj\_Ponownie()}{strzelaj\_Ponownie()}}
+{\footnotesize\ttfamily void Plansza\+::strzelaj\+\_\+\+Ponownie (\begin{DoxyParamCaption}\item[{bool}]{czy\+\_\+\+AI,  }\item[{int}]{x\+\_\+\+Wylosowane,  }\item[{int}]{y\+\_\+\+Wylosowane }\end{DoxyParamCaption})}
+
+Funkcja odpowiadajaca za system ponownego strzelania dla AI (w przypadku trafienia w statek).
+
+W przypadku trafienia w dwu lub czteromasztowca losowana jest orientacja ponownego strzalu (pion lub poziom). Po wylosowaniu orientacji wspolrzedne ponownego strzalu sa losowane o jedno miejsce obok miejsca poprzedniego strzalu. Informacja o nowym miejscu strzalu jest przesylana do funkcji czy\+\_\+\+Trafiono.
+
+Pobiera wartosc typu bool oraz dwie wartosci typu int. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em czy\+\_\+\+AI} & zmienna rozrozniajaca gracza od AI, ma wartosc true jesli ruch wykonuje AI w przypadku ruchu gracza ma wartosc false. \\
+\hline
+\mbox{\texttt{ in}}  & {\em x\+\_\+\+Wylosowane} & wylosowona wspolrzedna x. \\
+\hline
+\mbox{\texttt{ in}}  & {\em y\+\_\+\+Wylosowane} & wylosowona wspolrzedna y. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plansza_a5ae8316db0ba0b8af967187aadc076fe}\label{class_plansza_a5ae8316db0ba0b8af967187aadc076fe}} 
+\index{Plansza@{Plansza}!stworz\_CzteroMasztowiec@{stworz\_CzteroMasztowiec}}
+\index{stworz\_CzteroMasztowiec@{stworz\_CzteroMasztowiec}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{stworz\_CzteroMasztowiec()}{stworz\_CzteroMasztowiec()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_statek}{Statek}} $\ast$ Plansza\+::stworz\+\_\+\+Cztero\+Masztowiec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja ta tworzy obiekt czteromasztowca.
+
+\begin{DoxyReturn}{Returns}
+zwraca wskaznik typu \mbox{\hyperlink{class_statek}{Statek}} na obiekt czteromasztowca. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plansza_a2c98af5151abe2af2accbe7f6b0b5b95}\label{class_plansza_a2c98af5151abe2af2accbe7f6b0b5b95}} 
+\index{Plansza@{Plansza}!stworz\_DwuMasztowiec@{stworz\_DwuMasztowiec}}
+\index{stworz\_DwuMasztowiec@{stworz\_DwuMasztowiec}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{stworz\_DwuMasztowiec()}{stworz\_DwuMasztowiec()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_statek}{Statek}} $\ast$ Plansza\+::stworz\+\_\+\+Dwu\+Masztowiec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja ta tworzy obiekt dwumasztowca.
+
+\begin{DoxyReturn}{Returns}
+zwraca wskaznik typu \mbox{\hyperlink{class_statek}{Statek}} na obiekt dwumasztowca. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plansza_a125a99353ee43af8ed8ec58b7f1240ec}\label{class_plansza_a125a99353ee43af8ed8ec58b7f1240ec}} 
+\index{Plansza@{Plansza}!stworz\_JednoMasztowiec@{stworz\_JednoMasztowiec}}
+\index{stworz\_JednoMasztowiec@{stworz\_JednoMasztowiec}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{stworz\_JednoMasztowiec()}{stworz\_JednoMasztowiec()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_statek}{Statek}} $\ast$ Plansza\+::stworz\+\_\+\+Jedno\+Masztowiec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja ta tworzy obiekt jednomasztowca.
+
+\begin{DoxyReturn}{Returns}
+zwraca wskaznik typu \mbox{\hyperlink{class_statek}{Statek}} na obiekt jednomasztowca. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_plansza_a2f9f147d09ab5e47505cad0dc52acfba}\label{class_plansza_a2f9f147d09ab5e47505cad0dc52acfba}} 
+\index{Plansza@{Plansza}!aktualne\_x@{aktualne\_x}}
+\index{aktualne\_x@{aktualne\_x}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{aktualne\_x}{aktualne\_x}}
+{\footnotesize\ttfamily int Plansza\+::aktualne\+\_\+x\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_plansza_aea14506fec5b8a002ed859084b584525}\label{class_plansza_aea14506fec5b8a002ed859084b584525}} 
+\index{Plansza@{Plansza}!aktualne\_y@{aktualne\_y}}
+\index{aktualne\_y@{aktualne\_y}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{aktualne\_y}{aktualne\_y}}
+{\footnotesize\ttfamily int Plansza\+::aktualne\+\_\+y\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_plansza_aed3ecf6587c2ecf09cd04900fb843ec5}\label{class_plansza_aed3ecf6587c2ecf09cd04900fb843ec5}} 
+\index{Plansza@{Plansza}!czyPion@{czyPion}}
+\index{czyPion@{czyPion}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{czyPion}{czyPion}}
+{\footnotesize\ttfamily bool Plansza\+::czy\+Pion\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_plansza_adadfa5b042756f94a855b66de9973ede}\label{class_plansza_adadfa5b042756f94a855b66de9973ede}} 
+\index{Plansza@{Plansza}!czyZapelnione@{czyZapelnione}}
+\index{czyZapelnione@{czyZapelnione}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{czyZapelnione}{czyZapelnione}}
+{\footnotesize\ttfamily bool$\ast$$\ast$ Plansza\+::czy\+Zapelnione\hspace{0.3cm}{\ttfamily [protected]}}
+
+Uzupelnia tablice wartosciami true wokol statku i w jego miejscu \mbox{\Hypertarget{class_plansza_a2ddded9ca30adbca7342f64f9c450945}\label{class_plansza_a2ddded9ca30adbca7342f64f9c450945}} 
+\index{Plansza@{Plansza}!jaki\_Statek\_i\_Pozycja@{jaki\_Statek\_i\_Pozycja}}
+\index{jaki\_Statek\_i\_Pozycja@{jaki\_Statek\_i\_Pozycja}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{jaki\_Statek\_i\_Pozycja}{jaki\_Statek\_i\_Pozycja}}
+{\footnotesize\ttfamily int$\ast$$\ast$ Plansza\+::jaki\+\_\+\+Statek\+\_\+i\+\_\+\+Pozycja\hspace{0.3cm}{\ttfamily [protected]}}
+
+Przechowuje wartosc typu int 1 2 lub 4 na dlugosci statku w zaleznosci od jego rodzaju \mbox{\Hypertarget{class_plansza_a546ba68e5d094515bafaa4845014221d}\label{class_plansza_a546ba68e5d094515bafaa4845014221d}} 
+\index{Plansza@{Plansza}!licznik\_CzteroMasztowca@{licznik\_CzteroMasztowca}}
+\index{licznik\_CzteroMasztowca@{licznik\_CzteroMasztowca}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{licznik\_CzteroMasztowca}{licznik\_CzteroMasztowca}}
+{\footnotesize\ttfamily int Plansza\+::licznik\+\_\+\+Cztero\+Masztowca\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_plansza_a00b2f4571e5d22ce98cdd1cae6d9fda7}\label{class_plansza_a00b2f4571e5d22ce98cdd1cae6d9fda7}} 
+\index{Plansza@{Plansza}!licznik\_DwuMasztowca@{licznik\_DwuMasztowca}}
+\index{licznik\_DwuMasztowca@{licznik\_DwuMasztowca}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{licznik\_DwuMasztowca}{licznik\_DwuMasztowca}}
+{\footnotesize\ttfamily int Plansza\+::licznik\+\_\+\+Dwu\+Masztowca\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_plansza_a0beb707fa8fff157a6034be0b4011284}\label{class_plansza_a0beb707fa8fff157a6034be0b4011284}} 
+\index{Plansza@{Plansza}!losuj\_Orientacje\_Czteromasztowca@{losuj\_Orientacje\_Czteromasztowca}}
+\index{losuj\_Orientacje\_Czteromasztowca@{losuj\_Orientacje\_Czteromasztowca}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{losuj\_Orientacje\_Czteromasztowca}{losuj\_Orientacje\_Czteromasztowca}}
+{\footnotesize\ttfamily int Plansza\+::losuj\+\_\+\+Orientacje\+\_\+\+Czteromasztowca\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_plansza_a0a5f2024a97711e4bc1e66c07a0660c1}\label{class_plansza_a0a5f2024a97711e4bc1e66c07a0660c1}} 
+\index{Plansza@{Plansza}!losuj\_Orientacje\_Dwumasztowca@{losuj\_Orientacje\_Dwumasztowca}}
+\index{losuj\_Orientacje\_Dwumasztowca@{losuj\_Orientacje\_Dwumasztowca}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{losuj\_Orientacje\_Dwumasztowca}{losuj\_Orientacje\_Dwumasztowca}}
+{\footnotesize\ttfamily int Plansza\+::losuj\+\_\+\+Orientacje\+\_\+\+Dwumasztowca\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_plansza_a05f95b49df83ca3d01a2b8911e9246f5}\label{class_plansza_a05f95b49df83ca3d01a2b8911e9246f5}} 
+\index{Plansza@{Plansza}!obiekt\_Statku@{obiekt\_Statku}}
+\index{obiekt\_Statku@{obiekt\_Statku}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{obiekt\_Statku}{obiekt\_Statku}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_statek}{Statek}}$\ast$ Plansza\+::obiekt\+\_\+\+Statku\mbox{[}3\mbox{]}}
+
+Tablica wskaznikow typu \mbox{\hyperlink{class_statek}{Statek}} o 3 miejscach stosowana do utworzenia obiektow roznych statkow. \mbox{\Hypertarget{class_plansza_a0a81cfaa73670bb6318a89030925ee95}\label{class_plansza_a0a81cfaa73670bb6318a89030925ee95}} 
+\index{Plansza@{Plansza}!polePlanszy@{polePlanszy}}
+\index{polePlanszy@{polePlanszy}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{polePlanszy}{polePlanszy}}
+{\footnotesize\ttfamily char$\ast$$\ast$ Plansza\+::pole\+Planszy\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_plansza_add105f5fb0395522259e7fea6278b990}\label{class_plansza_add105f5fb0395522259e7fea6278b990}} 
+\index{Plansza@{Plansza}!strzelaj\_Wkolo@{strzelaj\_Wkolo}}
+\index{strzelaj\_Wkolo@{strzelaj\_Wkolo}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{strzelaj\_Wkolo}{strzelaj\_Wkolo}}
+{\footnotesize\ttfamily bool Plansza\+::strzelaj\+\_\+\+Wkolo\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_plansza_aaec68cf623afbb7f2f9e10fc030843e5}\label{class_plansza_aaec68cf623afbb7f2f9e10fc030843e5}} 
+\index{Plansza@{Plansza}!szerokosc@{szerokosc}}
+\index{szerokosc@{szerokosc}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{szerokosc}{szerokosc}}
+{\footnotesize\ttfamily int Plansza\+::szerokosc\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_plansza_ad51d5225574d7a36d3feedf9d1f67712}\label{class_plansza_ad51d5225574d7a36d3feedf9d1f67712}} 
+\index{Plansza@{Plansza}!wysokosc@{wysokosc}}
+\index{wysokosc@{wysokosc}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{wysokosc}{wysokosc}}
+{\footnotesize\ttfamily int Plansza\+::wysokosc\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_plansza_a68b35200843bc1c67737de09b240acbf}\label{class_plansza_a68b35200843bc1c67737de09b240acbf}} 
+\index{Plansza@{Plansza}!zatopione\_Statki@{zatopione\_Statki}}
+\index{zatopione\_Statki@{zatopione\_Statki}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{zatopione\_Statki}{zatopione\_Statki}}
+{\footnotesize\ttfamily int Plansza\+::zatopione\+\_\+\+Statki\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Mody/\+Desktop/\+Studia/\+Semestr 2/\+Podstawy programowania/\+PROJEKT/\+Wersja\+Finalnaz\+Dokumentacjai\+Zdjeciem/\+Statki/\+Klasy/\+Plansza/\mbox{\hyperlink{_plansza_8h}{Plansza.\+h}}\item 
+C\+:/\+Users/\+Mody/\+Desktop/\+Studia/\+Semestr 2/\+Podstawy programowania/\+PROJEKT/\+Wersja\+Finalnaz\+Dokumentacjai\+Zdjeciem/\+Statki/\+Klasy/\+Plansza/\mbox{\hyperlink{_plansza_8cpp}{Plansza.\+cpp}}\end{DoxyCompactItemize}

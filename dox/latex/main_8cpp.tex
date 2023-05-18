@@ -1,0 +1,102 @@
+\hypertarget{main_8cpp}{}\doxysection{C\+:/\+Users/\+Mody/\+Desktop/\+Studia/\+Semestr 2/\+Podstawy programowania/\+PROJEKT/\+Wersja\+Finalnaz\+Dokumentacjai\+Zdjeciem/\+Statki/main.cpp File Reference}
+\label{main_8cpp}\index{C:/Users/Mody/Desktop/Studia/Semestr 2/Podstawy programowania/PROJEKT/WersjaFinalnazDokumentacjaiZdjeciem/Statki/main.cpp@{C:/Users/Mody/Desktop/Studia/Semestr 2/Podstawy programowania/PROJEKT/WersjaFinalnazDokumentacjaiZdjeciem/Statki/main.cpp}}
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Statki\textbackslash{}\+Klasy\textbackslash{}\+Plansza\textbackslash{}\+Plansza.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Statki\textbackslash{}\+Klasy\textbackslash{}\+Statek\textbackslash{}\+Statek.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a93fa4b83cb07c77096d9c451b3c0b195}{odczytaj\+\_\+\+Instrukcje}} (fstream \&instrukcja)
+\item 
+void \mbox{\hyperlink{main_8cpp_a29b5946de56cf0709bceff51aaca9504}{ustaw\+\_\+\+Widocznosc}} (int \&wybor\+\_\+\+Widocznosci, bool \&czy\+\_\+\+Widoczna)
+\item 
+void \mbox{\hyperlink{main_8cpp_afc5a162a9c28aa85eb0b2f22ba81a853}{przygotowanie\+\_\+\+Gry}} (\mbox{\hyperlink{class_plansza}{Plansza}} \&p1, \mbox{\hyperlink{class_plansza}{Plansza}} \&ai, bool czy\+\_\+\+Widoczna)
+\item 
+int \mbox{\hyperlink{main_8cpp_a92c800f45d85c3d7a8ae71d3fb3a4d22}{przebieg\+\_\+\+Gry}} (\mbox{\hyperlink{class_plansza}{Plansza}} \&p1, \mbox{\hyperlink{class_plansza}{Plansza}} \&ai)
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a93fa4b83cb07c77096d9c451b3c0b195}\label{main_8cpp_a93fa4b83cb07c77096d9c451b3c0b195}} 
+\index{main.cpp@{main.cpp}!odczytaj\_Instrukcje@{odczytaj\_Instrukcje}}
+\index{odczytaj\_Instrukcje@{odczytaj\_Instrukcje}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{odczytaj\_Instrukcje()}{odczytaj\_Instrukcje()}}
+{\footnotesize\ttfamily void odczytaj\+\_\+\+Instrukcje (\begin{DoxyParamCaption}\item[{fstream \&}]{instrukcja }\end{DoxyParamCaption})}
+
+Funkcja otwiera plik z instrukcja, w przypadku braku dostepu do pliku zostaje rzucony wyjatek.
+
+Pobiera dana typu fstream poprzez referencje 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em instrukcja} & obiekt pliku z instrukcja gry. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em runtime\+\_\+error} & brak dostepu do pliku. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{main_8cpp_a92c800f45d85c3d7a8ae71d3fb3a4d22}\label{main_8cpp_a92c800f45d85c3d7a8ae71d3fb3a4d22}} 
+\index{main.cpp@{main.cpp}!przebieg\_Gry@{przebieg\_Gry}}
+\index{przebieg\_Gry@{przebieg\_Gry}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{przebieg\_Gry()}{przebieg\_Gry()}}
+{\footnotesize\ttfamily int przebieg\+\_\+\+Gry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_plansza}{Plansza}} \&}]{p1,  }\item[{\mbox{\hyperlink{class_plansza}{Plansza}} \&}]{ai }\end{DoxyParamCaption})}
+
+Dalszy przebieg gry, naprzemienne strzelanie gracza z AI w nieskonczonej petli dopoki ktos nie zestrzeli statkow przeciwnika.
+
+Pobiera dwie dane typu \mbox{\hyperlink{class_plansza}{Plansza}} poprzez referencje. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em p1} & obiekt gracza. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ai} & obiekt AI. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 jesli gra dobiegnie konca. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_afc5a162a9c28aa85eb0b2f22ba81a853}\label{main_8cpp_afc5a162a9c28aa85eb0b2f22ba81a853}} 
+\index{main.cpp@{main.cpp}!przygotowanie\_Gry@{przygotowanie\_Gry}}
+\index{przygotowanie\_Gry@{przygotowanie\_Gry}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{przygotowanie\_Gry()}{przygotowanie\_Gry()}}
+{\footnotesize\ttfamily void przygotowanie\+\_\+\+Gry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_plansza}{Plansza}} \&}]{p1,  }\item[{\mbox{\hyperlink{class_plansza}{Plansza}} \&}]{ai,  }\item[{bool}]{czy\+\_\+\+Widoczna }\end{DoxyParamCaption})}
+
+Rozpoczecie gry. Rozmieszczenie statkow przez gracza oraz AI.
+
+
+\begin{DoxyItemize}
+\item Pobiera dwie dane typu \mbox{\hyperlink{class_plansza}{Plansza}} poprzez referencje oraz wartosc typu bool. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em p1} & obiekt gracza. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ai} & obiekt AI. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em czy\+\_\+\+Widoczna} & widocznosc statkow AI na planszy, ma wartosc true jesli gracz wybral, aby statki AI na planszy byly widoczne, w przeciwnym wypadku false. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}\mbox{\Hypertarget{main_8cpp_a29b5946de56cf0709bceff51aaca9504}\label{main_8cpp_a29b5946de56cf0709bceff51aaca9504}} 
+\index{main.cpp@{main.cpp}!ustaw\_Widocznosc@{ustaw\_Widocznosc}}
+\index{ustaw\_Widocznosc@{ustaw\_Widocznosc}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{ustaw\_Widocznosc()}{ustaw\_Widocznosc()}}
+{\footnotesize\ttfamily void ustaw\+\_\+\+Widocznosc (\begin{DoxyParamCaption}\item[{int \&}]{wybor\+\_\+\+Widocznosci,  }\item[{bool \&}]{czy\+\_\+\+Widoczna }\end{DoxyParamCaption})}
+
+Funkcja ustawia widocznosc planszy AI w zaleznosci od wyboru gracza.
+
+Pobiera poprzez referencje wartosc typu int oraz bool. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em wybor\+\_\+\+Widocznosci} & wybor widocznosci statkow AI. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em czy\+\_\+\+Widoczna} & widocznosc statkow AI na planszy, ma wartosc true jesli gracz wybral, aby statki AI na planszy byly widoczne, w przeciwnym wypadku false. \\
+\hline
+\end{DoxyParams}

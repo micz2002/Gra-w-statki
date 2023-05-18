@@ -1,0 +1,7 @@
+  **GRA W  STATKI**
+     ZASADY GRY:
+
+Narysuj 3 statki tak, aby nie stykaly sie ze soba.
+Po jednym: Czteromasztowcu, Dwumasztowcu i Jednomasztowcu.
+
+*Wcisnij 1 aby widziec statki przeciwnika lub 2 aby byly ukryte*
